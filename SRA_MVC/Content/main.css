@@ -1,0 +1,254 @@
+.B14Blk
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 14pt;
+	FONT-FAMILY: helvetica, arial, sans-serif;
+}
+
+.N14Blk
+{
+    FONT-SIZE: 14pt;
+    FONT-FAMILY: helvetica, arial, sans-serif
+}
+
+.B12Blk
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    FONT-FAMILY: helvetica, arial, sans-serif
+}
+.SSTitle
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12pt;
+	FONT-FAMILY: helvetica, arial, sans-serif;
+	color: #336699;
+}
+
+
+.B12Wht
+{
+ 	 color: #fffffe;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    FONT-FAMILY: helvetica, arial, sans-serif
+}
+.N12Blk
+{
+    FONT-SIZE: 12pt;
+    FONT-FAMILY: helvetica, arial, sans-serif
+}
+
+.B10Blk
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: helvetica, arial, sans-serif
+}
+
+.B10Wht
+{
+  	 color: #fffffe;
+	 FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: helvetica, arial, sans-serif
+}
+
+.N10Blk
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: helvetica, arial, sans-serif
+}
+.B8Blk
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: helvetica, arial, sans-serif
+}
+.N8Blk
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: helvetica, arial, sans-serif
+}
+.LT
+{
+    VERTICAL-ALIGN: top;
+    TEXT-ALIGN: left
+}
+.CT
+{
+    VERTICAL-ALIGN: top;
+    TEXT-ALIGN: center
+}
+.RT
+{
+    VERTICAL-ALIGN: top;
+    TEXT-ALIGN: right
+}
+BLOCKQUOTE
+{
+    COLOR: #000000;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    FONT-SIZE: 10pt;
+    FONT-STYLE: italic
+}
+P.SPECIAL
+{
+    COLOR: #ff0000;
+    FONT-FAMILY: monospaced;
+    FONT-SIZE: 8pt
+}
+LI
+{
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    FONT-SIZE: 10pt;
+    LIST-STYLE: square
+}
+A.newline
+{
+    COLOR: #8b4513;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+		FONT-SIZE: 12px;
+    TEXT-DECORATION: none
+}
+A.newline:link
+{
+    COLOR: #8b4513;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    TEXT-DECORATION: none
+}
+A.newline:active
+{
+    COLOR: #8b4513;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A.newline:visited
+{
+    COLOR: #8b4513;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    TEXT-DECORATION: none
+}
+A.newline:hover
+{
+    BACKGROUND-COLOR: #8b4513;
+    COLOR: #fffffe;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    FONT-STYLE: normal;
+    TEXT-DECORATION: none
+}
+A.newline1
+{
+    COLOR: #000000;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+	 FONT-SIZE: 14px;
+    TEXT-DECORATION: none
+}
+A.newline1:link
+{
+    COLOR: #000000;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    TEXT-DECORATION: none
+}
+A.newline1:active
+{
+    COLOR: #000000;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    TEXT-DECORATION: none
+}
+A.newline1:visited
+{
+    COLOR: #000000;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    TEXT-DECORATION: none
+}
+A.newline1:hover
+{
+    BACKGROUND-COLOR: #996600;
+    COLOR: #fffffe;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    FONT-STYLE: normal;
+    TEXT-DECORATION: none
+}
+A.bboard:link
+{
+    COLOR: #000000;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    TEXT-DECORATION: none
+}
+A.bboard:active
+{
+    COLOR: #336699;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    TEXT-DECORATION: underline
+}
+A.bboard:visited
+{
+    COLOR: #000000;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    TEXT-DECORATION: none
+}
+A.bboard:hover
+{
+    COLOR: #336699;
+    FONT-FAMILY: helvetica, arial, sans-serif;
+    FONT-STYLE: normal;
+    TEXT-DECORATION: underline
+}
+p
+{
+	font-family: helvetica, arial, sans-serif;
+	font-size: 10pt;
+}
+			.outRounded 
+			{
+			
+			display:block;
+			position:relative;
+			margin:2px 2px;
+			border-width:1px 0;
+			border-style:solid;
+			border-color: #cc9966;
+			text-decoration:none;
+			background-color:#cc9966;
+			}
+			
+			.inRounded 
+			{
+			
+			display:block;
+			background-color:#cc9966;
+			margin:0 -1px;
+			padding:2px 16px;
+			color: black;
+			font-family: helvetica, arial, sans-serif;
+			font-size: 10pt;
+			}
+						.outRounded1 
+			{
+			
+			display:block;
+			position:relative;
+			margin:2px 2px;
+			border-width:1px 0;
+			border-style:solid;
+			border-color: #c0c0c0;
+			text-decoration:none;
+			background-color:#c0c0c0;
+			}
+			
+			.inRounded1
+			{
+			
+			display:block;
+			background-color:#c0c0c0;
+			margin:0 -1px;
+			padding:2px 16px;
+			color: black;
+			font-family: helvetica, arial, sans-serif;
+			font-size: 10pt;
+			}
+

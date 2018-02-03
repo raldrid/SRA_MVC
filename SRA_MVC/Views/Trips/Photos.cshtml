@@ -1,0 +1,87 @@
+﻿@using SRA_MVC.Models
+
+@model IEnumerable<Photos>
+
+<style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: small;
+    }
+
+    td {
+        padding: 5px;
+    }
+</style>
+
+
+    @foreach (Photos photo in Model)
+    {
+        <table width="452" align="center" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="B12Wht" align="left" colspan="3">
+                    <span style="display:block;	position:relative; margin:2px 2px; border-width:1px 0; border-style:solid; border-color: #cc9966; text-decoration:none; background-color:#cc9966;">
+                        <div style="display:block; background-color:#cc9966; margin:0 -1px; padding:2px 16px; color: black;	font-family: helvetica, arial, sans-serif; font-size: 10pt;">
+                            @ViewBag.Title
+                        </div>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="N10Blk" align="left">
+                    <span style="display:block;	position:relative; margin:2px 2px; border-width:1px 0; border-style:solid; border-color: #c0c0c0; text-decoration:none;	background-color:#c0c0c0;">
+                        <div style="display:block;background-color:#c0c0c0;margin:0 -1px;padding:2px 16px;color: black;font-family: helvetica, arial, sans-serif;font-size: 10pt;">
+                            Slide&nbsp;@photo.PhotoId&nbsp;of&nbsp;@ViewBag.PhotoCount
+                        </div>
+                    </span>
+                </td>
+                <td class="N10Blk" align="center">
+                    <span style="display:block;	position:relative; margin:2px 2px; border-width:1px 0; border-style:solid; border-color: #c0c0c0; text-decoration:none;	background-color:#c0c0c0;">
+                        <div style="display:block;background-color:#c0c0c0;margin:0 -1px;padding:2px 16px;color: black;font-family: helvetica, arial, sans-serif;font-size: 10pt;">
+                            <a href="index.aspx">Index</a>
+                        </div>
+                    </span>
+                </td>
+                <td class="N10Blk" align="right">
+                    <span style="display:block;	position:relative; margin:2px 2px; border-width:1px 0; border-style:solid; border-color: #c0c0c0; text-decoration:none;	background-color:#c0c0c0;">
+                        <div style="display:block;background-color:#c0c0c0;margin:0 -1px;padding:2px 16px;color: black;font-family: helvetica, arial, sans-serif;font-size: 10pt;">
+                            @if (@photo.PhotoId > 1)
+                            {
+                                @Html.ActionLink("Prev", "Photos", "Trips", new { id = (@photo.PhotoId - 1) }, null)
+                            }&nbsp;&nbsp;
+                            @if (@photo.PhotoId < @ViewBag.PhotoCount)
+                            {
+                                @Html.ActionLink("Next", "Photos", "Trips", new { id = (@photo.PhotoId + 1) }, null)
+                            }
+                        </div>
+                    </span>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="3">
+                    <image src="~/@photo.File" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <span style="display:block;	position:relative; margin:2px 2px; border-width:1px 0; border-style:solid; border-color: #cc9966; text-decoration:none; background-color:#cc9966;">
+                        <div style="display:block; background-color:#cc9966; margin:0 -1px; padding:2px 16px; color: black;	font-family: helvetica, arial, sans-serif; font-size: 10pt;">
+                            <div class="B10Blk" align="left">
+                                @photo.TCaption
+                            </div>
+                            <br>
+                            <div class="N10Blk" align="left">
+                                @photo.Caption
+                            </div>
+                            <br>
+                            <div class="N8Blk" align="left">
+                                @photo.Date
+                            </div>
+                        </div>
+                    </span>
+                </td>
+            </tr>
+
+        </table>
+    }
+

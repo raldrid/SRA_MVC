@@ -1,0 +1,38 @@
+﻿@model IEnumerable<SRA_MVC.Models.ra_GetAllMessages_Result>
+
+@{
+    ViewBag.Title = "Messages";
+}
+
+<div align="center"><span class="B14Blk">Guestbook</span></div>
+
+<p class="LT">
+    If you would like to contribute to the discussion or make a site-related comment, click the post message button below. To read and reply to an existing message, click the message title to display it's content. Once the message is displayed, you may post a reply by clicking the reply button associated with that message.
+</p>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<br />
+<div style="border-radius:5px;border:1px solid silver;overflow:hidden;">
+    <table class="table">
+        <tr style="background-color:#ffe4b5;">
+            <th class="CT">&nbsp;</th>
+            <th class="LT">Title</th>
+            <th class="LT">Posted By</th>
+            <th class="RT">Replies</th>
+            <th class="CT">Last Post</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="CT"><img src="../Images/Guestbook/@(item.Face).gif" /></td>
+                <td class="LT">@Html.ActionLink(@item.Title, "Details", "Guestbook", new { @id = item.Id }, null)</td>
+                <td class="LT">@Html.DisplayFor(modelItem => item.Name)</td>
+                <td class="RT">@Html.DisplayFor(modelItem => item.MessageCount)</td>
+                <td class="CT">@Html.DisplayFor(modelItem => item.LastPostDate)</td>
+            </tr>
+        }
+
+    </table>
+</div>

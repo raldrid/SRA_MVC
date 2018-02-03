@@ -1,0 +1,17 @@
+﻿@model IEnumerable<SRA_MVC.Models.ra_GetMessageThread_Result>
+@{
+    ViewBag.Title = "Messages";
+}
+
+<div align="center"><span class="B14Blk">Messages</span></div>
+<br />
+@foreach (var item in Model)
+{
+
+    <div style="margin-bottom:5px;border:1px solid silver;border-radius: 5px;overflow:hidden;">
+        <div style="padding:5px;background-color:#ffe4b5;"><img src="~/Images/Guestbook/@(item.Face).gif" />&nbsp;<strong>@item.Title</strong></div>
+        <div style="padding:3px;font-size:x-small; font-weight:bold; background-color:#F2F2F2;">@item.Name,&nbsp;@item.City,&nbsp;@item.State,&nbsp;@item.Country&nbsp;(@(Html.DisplayFor(modelItem => item.Date)))</div><br />
+        <div style="padding:3px;">@(item.MessageBody)</div>
+    </div>
+
+}
